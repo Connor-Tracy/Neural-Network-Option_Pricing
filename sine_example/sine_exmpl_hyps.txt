@@ -1,0 +1,10 @@
+Trained Sine Model Hyperparameters
+
+'number_layers'   : 2,
+'number_units'    : 12,
+'learning_rate'   : 0.004871010080685016,
+'rate_decay'      : 0.9032167916319965,
+'l1_regularizer'  : 0.0003417837964467978,
+'l2_regularizer'  : 0.000390735809379687,
+'activation_func' : 'sigmoid',
+'dropout'         : 0.23402950096803992

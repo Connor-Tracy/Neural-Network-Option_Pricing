@@ -1,0 +1,36 @@
+# From terminal, connect with ssh
+ssh <dur id>@wrds-cloud.wharton.upenn.edu
+
+# Enter password when prompted
+
+# Move to directory
+cd <name of folder with .sh file of program to be run>
+
+# Submit job to queue
+qsub <name of .sh file of program to be run>.sh
+
+# Return to home directory
+cd
+
+# Check status of current jobs
+qstat
+
+
+# Accessing WRDS Cloud via SSH achieves the same speed as in
+# JupyterHub/Lab using default allocations but allows for the
+# .sh file to request more CPU+RAM as per website. I find
+# 4 CPUs and max RAM (8GB per core) achieves fastest results
+# so this is written to the .sh file.
+
+# To create a virtual environment:
+python -m venv ~/venvs/<environment name>
+e.g.
+source venvs/scipy-env/bin/tf-env
+
+# To activate a virtual environment:
+source <venvs folder name>/<venv name>/bin/activate
+e.g.
+source venvs/scipy-env/bin/activate
+
+# To install a package:
+Activate a virtual environment and install with pip as normal.

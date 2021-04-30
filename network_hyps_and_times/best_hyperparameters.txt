@@ -1,0 +1,93 @@
+Best Hyperparameters:
+
+=======================================
+
+Market Data Dimensions
+   Val MAPE 30.1%
+   (benchmark 98%) - Lower is better
+
+number_layers   : 3
+number_units    : 14
+learning_rate   : 0.0031622776601683794
+rate_decay      : 1.0
+l1_regularizer  : 3.981071705534969e-09
+l2_regularizer  : 3.981071705534969e-08
+activation_func : elu
+
+=======================================
+
+Heston 1 Dimension
+  Val MAPE 0.59%
+
+number_layers   : 4
+number_units    : 5
+learning_rate   : 0.0020532768013140695
+rate_decay      : 0.9260942201031189
+l1_regularizer  : 1.8220209272284306e-07
+l2_regularizer  : 2.223087029305306e-06
+activation_func : elu
+
+=======================================
+
+Heston 4 Dimensions
+   Val MAPE 0.46%
+
+number_layers   : 5
+number_units    : 11
+learning_rate   : 0.003343011965403283
+rate_decay      : 1.0
+l1_regularizer  : 1.2689610031679234e-08
+l2_regularizer  : 1e-07
+activation_func : elu
+
+=======================================
+
+Heston 7 Dimensions
+   Val MAPE 0.42%
+
+number_layers   : 3
+number_units    : 8
+learning_rate   : 0.008410349931109732
+rate_decay      : 0.9373650283899712
+l1_regularizer  : 1.138171227667121e-07
+l2_regularizer  : 8.854986578381169e-08
+activation_func : elu
+
+=======================================
+
+Heston 10 Dimensions
+   Val MAPE 0.54%
+
+number_layers   : 4
+number_units    : 8
+learning_rate   : 0.005451471686114507
+rate_decay      : 0.90923157270006
+l1_regularizer  : 1.4486689707216352e-07
+l2_regularizer  : 1.810821338043891e-07
+activation_func : elu
+
+=======================================
+
+Heston 13 Dimensions
+   Val MAPE 0.53%
+
+number_layers   : 5
+number_units    : 19
+learning_rate   : 0.003829733191759989
+rate_decay      : 0.821837036444325
+l1_regularizer  : 4.434242545353473e-08
+l2_regularizer  : 2.5599029496976226e-08
+activation_func : elu
+
+=======================================
+
+Heston 16 Dimensions
+   Val MAPE 0.38%
+
+number_layers   : 6
+number_units    : 19
+learning_rate   : 0.00476654387664145
+rate_decay      : 0.8998223163663568
+l1_regularizer  : 4.2846295035144304e-07
+l2_regularizer  : 9.279111614760352e-07
+activation_func : elu

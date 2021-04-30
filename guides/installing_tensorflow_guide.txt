@@ -1,0 +1,46 @@
+To set up TensorFlow GPU: https://www.youtube.com/watch?v=PnK1jO2kXOQ&t=0s [Without his tools.file]
+
+Including the large 100s of MB drivers, this process takes around 15 minutes and is
+by far the easiest way to install TensorFlow for GPU. The alternative is to download
+many programs (3GB) to get the drivers and navigating many compatibility conflicts.
+
+All steps below are entered in the Anaconda Prompt (search bar will bring it up).
+
+-1) Get Anaconda
+0) Open Anaconda Prompt.
+
+1) conda install -y jupyter
+
+2) conda create --name tf-gpu python=3.7 
+ - Important: TensorFlow is not designed for 3.9 and GPU does not work for 3.8.
+ - 'tf-gpu' can be any environment name, eg 'tf-gpu-env' or 'tf-env
+
+3) conda activate tf-gpu
+ - Use your chosen environment name instead if not 'tf-gpu'.
+
+4) conda install nb_conda pandas matplotlib  tensorflow-datasets seaborn
+- May need to add 'scipy' but should be covered.
+
+5) conda install -c anaconda tensorflow-gpu
+
+6) conda install -c conda-forge keras-tuner tensorboard-plugin-wit
+
+7) pip install wrds
+
+8) python -m ipykernel install --user --name tensorflow --display-name "Python 3.7 (tf-gpu)"
+ - Free choice over the display name in quotes, just to identify the environment
+ - kernel in Jupyter selection.
+
+9) jupyter notebook
+ - Will launch brower, navigate to a .ipynb or click New>Python 3 in a suitable directory.
+
+10) Click Kernel > Python 3.7 (tf-gpu) [The display name from step 9]
+
+11) [In python script]
+   ```import tensorflow as tf
+      tf.config.list_physical_devices()```
+- Check a GPU is listed. If so, we are done. If not, a mistake has been made.
+
+
+
+To run TensorFlow on GPU in the future, complete steps 3, 8, 9.
