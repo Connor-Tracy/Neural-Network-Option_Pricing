@@ -1,2 +1,2 @@
 # Connor-Tracy-Neural-Network-Pricer
-4th Yea Masters Dissertation Project
+4th Year Masters Dissertation Project
